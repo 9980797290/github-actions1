@@ -1,0 +1,39 @@
+name : Jhansi Workflow CI
+
+on: 
+  push:
+    branches: ["main", "master"]
+  pull_request: 
+    brandhes: ["main", "master"]
+
+  workflow_dispatch:
+
+jobs:
+
+  a_job:
+
+    runs-on: windows-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Run a single line script
+        run: echo This is done me!!.
+
+      - name: Run a poly-line script
+        run: |
+          echo This is Another file 
+          echo This is Second file 
+  
+  b_job:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - name: Heres the second job
+        run: |
+          echo This is the github actions!!
+          echo  this is for practicing!!
