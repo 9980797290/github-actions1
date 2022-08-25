@@ -13,8 +13,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-       - uses: actions/checkout@v3
-       - name: Run a single-line script
+        uses: actions/checkout@v3
+        name: Run a single-line script
         run: echo This is done me!!.
 
       - name: Run a multi-line script
@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Heres the second job
+     uses: actions/checkout@v3
+     name: Heres the second job
         run: |
           echo This is the github actions!!
           echo  this is for practicing!!
@@ -35,8 +35,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-     - uses: actions/checkout@v3
-     - name: Heres the third job
+      uses: actions/checkout@v3
+      name: Heres the third job
         run: |
           echo  Thank you
           echo  Bye!!     
