@@ -69,5 +69,6 @@ jobs:
         run: |
           echo Thank you for visiting!!
           echo Bye!!
-        
+          echo jhansi with self hosted runner
+          
        
