@@ -15,8 +15,7 @@ jobs:
     steps:
         uses: actions/checkout@v3
         name: Run a single-line script
-        run: echo This is done me!!.
-
+        run: echo ${{secrets.FILE}}
        name: Run a multi-line script
         run: |
           echo This is Another file 
